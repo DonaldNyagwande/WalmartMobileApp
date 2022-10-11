@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+  <ImageView
+      android:id="@+id/imageView2"
+      android:layout_width="0dp"
+      android:layout_height="198dp"
+      android:layout_marginTop="164dp"
+      android:layout_marginEnd="10dp"
+      app:layout_constraintEnd_toStartOf="@+id/imageView3"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:srcCompat="@drawable/electronics"
+      android:onClick="displayToast"
+      android:clickable="true"
+      android:focusable="true"/>
+
+  <ImageView
+      android:id="@+id/imageView3"
+      android:layout_width="0dp"
+      android:layout_height="0dp"
+      android:layout_marginTop="2dp"
+      android:layout_marginBottom="2dp"
+      android:onClick="displayToast"
+      app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toEndOf="@+id/imageView2"
+      app:layout_constraintTop_toTopOf="@+id/imageView2"
+      app:layout_constraintVertical_bias="0.0"
+      app:srcCompat="@drawable/jackets"
+      android:clickable="true"
+      android:focusable="true"/>
+
+  <ImageView
+      android:id="@+id/imageView4"
+      android:layout_width="0dp"
+      android:layout_height="0dp"
+      android:layout_marginStart="24dp"
+      android:layout_marginTop="54dp"
+      android:layout_marginEnd="25dp"
+      android:layout_marginBottom="54dp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toStartOf="@+id/textView13"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/imageView2"
+      app:srcCompat="@drawable/lipstick"
+      android:onClick="displayToast"
+      android:clickable="true"
+      android:focusable="true"/>
+
+  <ImageView
+      android:id="@+id/imageView6"
+      android:layout_width="0dp"
+      android:layout_height="0dp"
+      android:layout_marginTop="19dp"
+      android:layout_marginBottom="34dp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toEndOf="@+id/textView12"
+      app:layout_constraintTop_toTopOf="@+id/imageView4"
+      app:srcCompat="@drawable/choco"
+      android:onClick="displayToast"
+      android:clickable="true"
+      android:focusable="true"/>
+
+  <TextView
+      android:id="@+id/textView10"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="33dp"
+      android:text="Electronics"
+      android:textSize="20sp"
+      app:layout_constraintBaseline_toBaselineOf="@+id/textView11"
+      app:layout_constraintStart_toStartOf="@+id/imageView2" />
+
+  <TextView
+      android:id="@+id/textView11"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="3dp"
+      android:layout_marginTop="12dp"
+      android:text="Clothing"
+      android:textSize="20sp"
+      app:layout_constraintStart_toStartOf="@+id/imageView3"
+      app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+  <TextView
+      android:id="@+id/textView12"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="35dp"
+      android:layout_marginEnd="145dp"
+      android:text="Beauty"
+      android:textSize="20sp"
+      app:layout_constraintBaseline_toBaselineOf="@+id/textView13"
+      app:layout_constraintEnd_toStartOf="@+id/imageView6"
+      app:layout_constraintStart_toStartOf="parent" />
+
+  <TextView
+      android:id="@+id/textView13"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="6dp"
+      android:layout_marginBottom="32dp"
+      android:text="Food"
+      android:textSize="20sp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintStart_toStartOf="@+id/imageView6" />
+
+  <TextView
+      android:id="@+id/textView15"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="97dp"
+      android:layout_marginBottom="40dp"
+      android:gravity="center"
+      android:text="Shopping by Categories"
+      android:textSize="20sp"
+      app:layout_constraintBottom_toTopOf="@+id/imageView2"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+  <TextView
+      android:id="@+id/displayEmail"
+      android:layout_width="274dp"
+      android:layout_height="26dp"
+      android:layout_marginTop="4dp"
+      android:layout_marginEnd="4dp"
+      android:layout_marginBottom="65dp"
+      android:ems="10"
+      android:hint="someone@example.com"
+      android:inputType="textPersonName"
+      android:textSize="20sp"
+      app:layout_constraintBottom_toTopOf="@+id/textView15"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.0" />
+
+  <TextView
+      android:id="@+id/textView14"
+      android:layout_width="104dp"
+      android:layout_height="32dp"
+      android:layout_marginEnd="7dp"
+      android:text="Welcome"
+      android:textAlignment="center"
+      android:textSize="20sp"
+      app:layout_constraintBaseline_toBaselineOf="@+id/editTextTextPersonName6"
+      app:layout_constraintEnd_toStartOf="@+id/displayEmail"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
