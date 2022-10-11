@@ -49,6 +49,7 @@ class MainActivity : AppCompatActivity() {
             val usernameString=textEmail.text.toString()
             val pass=textPassword.text.toString()
 
+
 //            if(user1.userName.equals(usernameString)){
 //                Toast.makeText(this,"Working",Toast.LENGTH_SHORT).show()
 //            }else{
@@ -57,7 +58,7 @@ class MainActivity : AppCompatActivity() {
             for(index:User in uList){
                 if(index.userName.equals(usernameString)&& index.password.equals(pass)){
                     val signInIntent=Intent(this,ShoppingCart::class.java)
-                    var stringEmail=index.userName.toString()
+                    var stringEmail=index.userName
                     signInIntent.putExtra("email",stringEmail)
                     startActivity(signInIntent)
                     finish()
@@ -71,7 +72,8 @@ class MainActivity : AppCompatActivity() {
         var resultContracts=registerForActivityResult(ActivityResultContracts.StartActivityForResult()){
             result->
                 if(result.resultCode== Activity.RESULT_OK) {
-                    emailtxt.text = result.data?.data.toString()
+                    val userNew=result.data?.getSerializableExtra("user") as User
+                    uList.add(userNew)
 
                 }else  emailtxt.text = "Failed to fetch result"
 
