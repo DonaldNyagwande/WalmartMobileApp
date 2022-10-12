@@ -81,7 +81,6 @@ class MainActivity : AppCompatActivity() {
         createNew.setOnClickListener {
             val myIntent= Intent(this,SecondActivity::class.java)
             resultContracts.launch(myIntent)
-            finish()
 
         }
     }

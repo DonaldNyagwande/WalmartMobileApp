@@ -17,7 +17,7 @@ class ShoppingCart : AppCompatActivity() {
     }
 
     fun displayToast(view: View) {
-        var selectImg=R.id.imageView
+        var selectImg=view.id
         when(selectImg){
             R.id.imageView2->{
                 Toast.makeText(this,"You've selected the Electronics ",Toast.LENGTH_SHORT).show()
@@ -25,7 +25,7 @@ class ShoppingCart : AppCompatActivity() {
             R.id.imageView3->{
                 Toast.makeText(this,"You've selected the Clothing",Toast.LENGTH_SHORT).show()
             }
-            R.id.imageView5->{
+            R.id.imageView6->{
                 Toast.makeText(this,"You've selected the Food",Toast.LENGTH_SHORT).show()
             }
             R.id.imageView4->{
